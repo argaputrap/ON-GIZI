@@ -1,0 +1,42 @@
+<!--
+  Generated template for the AdminpagePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>halaman admin</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Masukan nama makanan</ion-label>
+      <ion-input type="text" #makanan></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-label floating>Gizi</ion-label>
+        <ion-input type="text" #gizi></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Deskripsi</ion-label>
+      <ion-input type="text" #deskripsi></ion-input>
+    </ion-item>
+
+    
+
+  </ion-list>
+  <button ion-button full (click)="submitMakananSekarang()">Submit</button>
+
+  <button ion-button full (click)="laporanPengguna()">Lihat Laporan Pengguna</button>
+
+
+  <button ion-button full (click)="registerAdminPage()">register admin</button>
+  
+</ion-content>

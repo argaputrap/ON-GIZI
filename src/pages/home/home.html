@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      On-Giz
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        
+          <ion-item>
+            <ion-label floating>email</ion-label>
+            <ion-input type="text" #email></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" #password></ion-input>
+          </ion-item>
+
+          <button ion-button full (click)="loginNow()">login</button>
+        
+        </ion-list>
+    <button ion-button full (click)="registerPage()">register</button>
+    
+</ion-content>

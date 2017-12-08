@@ -1,0 +1,71 @@
+<!--
+  Generated template for the AdminregisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register Admin</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-content padding>
+    <ion-list>
+        
+          <ion-item>
+            <ion-label floating>Full name</ion-label>
+            <ion-input type="text" #fullname></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password" #password></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" #email></ion-input>
+          </ion-item>
+
+          <ion-list radio-group>
+              <ion-list-header>
+                Jenis Kelamin
+              </ion-list-header>
+            
+              <ion-item>
+                <ion-label>Laki-laki</ion-label>
+                <ion-radio checked="true" value="Laki-laki" #jeniskelamin></ion-radio>
+              </ion-item>
+            
+              <ion-item>
+                <ion-label>Perempuan</ion-label>
+                <ion-radio value="perempuan" #jeniskelamin></ion-radio>
+              </ion-item>
+          </ion-list>
+
+          <ion-item>
+              <ion-label floating>Usia</ion-label>
+              <ion-input type="number" #usia></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Berat Badan</ion-label>
+              <ion-input type="number" #berat></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Tinggi Badan</ion-label>
+              <ion-input type="number" #tinggi></ion-input>
+            </ion-item>
+
+            <button ion-button full (click)="submitNow()">Submit</button>
+
+              
+        </ion-list>
+
+</ion-content>

@@ -1,0 +1,35 @@
+<!--
+  Generated template for the RekomendasiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>rekomendasi</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-datetime displayFormat="MMM DD YY" [(ngModel)]="mydate"></ion-datetime>
+
+  Karbohidrat :{{karbohidrat}} <br>
+  <button ion-button (click)="cekHalamanMakanan('karbohidrat')">Lihat makanan karbohidrat</button> <br>
+  Protein Hewani : {{protein_hewani}}<br>
+  <button ion-button (click)="cekHalamanMakanan('protein_hewani')">Lihat makanan protein hewani</button><br>
+  Protein Nabati : {{protein_nabati}}<br>
+  <button ion-button (click)="cekHalamanMakanan('protein_nabati')">Lihat makanan protein nabati</button> <br>
+  Lemak : {{lemak}}<br>
+  <button ion-button (click)="cekHalamanMakanan('lemak')">Lihat makanan karbohidrat</button><br>
+
+  <button ion-button full (click)="submitLaporan()">Buat laporan harian</button>
+  <button ion-button full (click)="lihatLaporan()">Lihat Laporan</button>
+
+        
+
+  
+
+</ion-content>
